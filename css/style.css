@@ -25,16 +25,6 @@ body {
     object-fit: cover;
 }
 
-.video-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.4);
-    backdrop-filter: blur(2px);
-}
-
 .content {
     position: relative;
     z-index: 1;
@@ -47,7 +37,7 @@ body {
 }
 
 .search-box {
-    background: rgba(255, 255, 255, 0.15);
+    background: rgba(0, 0, 0, 0.5);
     backdrop-filter: blur(20px);
     border-radius: 50px;
     padding: 8px 20px;
@@ -62,8 +52,8 @@ body {
 }
 
 .search-box:focus-within {
-    background: rgba(255, 255, 255, 0.25);
-    box-shadow: 0 12px 48px rgba(0, 0, 0, 0.4);
+    background: rgba(0, 0, 0, 0.6);
+    box-shadow: 0 12px 48px rgba(0, 0, 0, 0.5);
 }
 
 .engine-dropdown {
@@ -75,7 +65,7 @@ body {
     align-items: center;
     gap: 8px;
     padding: 10px 15px;
-    background: rgba(255, 255, 255, 0.15);
+    background: rgba(255, 255, 255, 0.2);
     border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 25px;
     color: white;
@@ -85,7 +75,7 @@ body {
 }
 
 .engine-selected:hover {
-    background: rgba(255, 255, 255, 0.25);
+    background: rgba(255, 255, 255, 0.3);
 }
 
 .engine-icon {
@@ -209,16 +199,16 @@ body {
     transition: all 0.3s ease;
     padding: 15px;
     border-radius: 16px;
-    background: rgba(255, 255, 255, 0.1);
+    background: rgba(0, 0, 0, 0.4);
     backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 255, 255, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.2);
     min-width: 100px;
 }
 
 .shortcut-item:hover {
     transform: translateY(-8px) scale(1.05);
-    background: rgba(255, 255, 255, 0.2);
-    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+    background: rgba(0, 0, 0, 0.5);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
 }
 
 .shortcut-item img {
