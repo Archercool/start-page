@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Start Page</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="video-container">
+        <video id="bg-video" autoplay muted loop playsinline>
+            <source src="videos/background.mp4" type="video/mp4">
+        </video>
+        <div class="video-overlay"></div>
+    </div>
+
+    <div class="content">
+        <div class="search-box">
+            <select id="engine-select">
+                <option value="google">Google</option>
+                <option value="baidu">百度</option>
+                <option value="bing">Bing</option>
+            </select>
+            <div class="search-input-wrapper">
+                <input type="text" id="search-input" placeholder="搜索...">
+                <button id="search-btn">🔍</button>
+            </div>
+        </div>
+
+        <div class="shortcuts">
+            <a href="https://leetcode.cn/" class="shortcut-item" target="_blank" title="LeetCode">
+                <img src="https://leetcode.cn/favicon.ico" alt="LeetCode" onerror="this.src='data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💻</text></svg>'">
+                <span>LeetCode</span>
+            </a>
+            <a href="https://github.com/" class="shortcut-item" target="_blank" title="GitHub">
+                <img src="https://github.com/favicon.ico" alt="GitHub" onerror="this.src='data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🐙</text></svg>'">
+                <span>GitHub</span>
+            </a>
+            <a href="https://www.bilibili.com/" class="shortcut-item" target="_blank" title="哔哩哔哩">
+                <img src="https://www.bilibili.com/favicon.ico" alt="哔哩哔哩" onerror="this.src='data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📺</text></svg>'">
+                <span>哔哩哔哩</span>
+            </a>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
