@@ -16,14 +16,21 @@
 
     <div class="content">
         <div class="search-box">
-            <select id="engine-select">
-                <option value="google">Google</option>
-                <option value="baidu">百度</option>
-                <option value="bing">Bing</option>
-            </select>
+            <div class="engine-dropdown" id="engine-dropdown">
+                <div class="engine-selected" id="engine-selected">
+                    <span class="engine-icon">🔍</span>
+                    <span class="engine-name">Google</span>
+                    <span class="engine-arrow">▼</span>
+                </div>
+                <ul class="engine-options" id="engine-options">
+                    <li data-value="google" class="active">🔍 Google</li>
+                    <li data-value="baidu">🔎 百度</li>
+                    <li data-value="bing">🌐 Bing</li>
+                </ul>
+            </div>
             <div class="search-input-wrapper">
                 <input type="text" id="search-input" placeholder="搜索...">
-                <button id="search-btn">🔍</button>
+                <button id="search-btn">↵</button>
             </div>
         </div>
 
