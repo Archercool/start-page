@@ -67,19 +67,30 @@ body {
 }
 
 #engine-select {
-    background: transparent;
-    border: none;
+    background: rgba(255, 255, 255, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.3);
     color: white;
-    font-size: 16px;
-    padding: 10px;
+    font-size: 15px;
+    padding: 12px 35px 12px 15px;
     cursor: pointer;
     outline: none;
-    min-width: 80px;
+    min-width: 90px;
+    border-radius: 25px;
+    appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='white' d='M6 8L1 3h10z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 12px center;
+    transition: all 0.3s ease;
+}
+
+#engine-select:hover {
+    background-color: rgba(255, 255, 255, 0.25);
 }
 
 #engine-select option {
-    background: #333;
+    background: #2a2a3e;
     color: white;
+    padding: 10px;
 }
 
 .search-input-wrapper {
